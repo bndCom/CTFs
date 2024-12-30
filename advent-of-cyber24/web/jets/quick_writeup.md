@@ -1,0 +1,3 @@
+- the website is using JWT for authentication
+- the file `/script.js` contains the secret key of the JWT which is `1dd22bb4270cb14572322e03425c00583e02bf63f5c7af7d2f387e24e7d5b931`. after jwt decryption using the previous key, the website checks if the the current user is `KUn4L`, and then displays some Jets for him.
+- the jwt can be regenerated using the secret key with the username set to `KUn4L`, and then have the ability to get the flag which is writen in one of the displayed pictures.

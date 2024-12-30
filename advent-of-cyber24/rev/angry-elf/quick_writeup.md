@@ -1,0 +1,1 @@
+- the binary simply XORs the input and compares it againt a bytearray `obfuscated_key`, the decryption is as follows in the solve script.

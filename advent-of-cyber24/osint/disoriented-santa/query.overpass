@@ -1,0 +1,24 @@
+[out:json][timeout:25];
+{{geocodeArea:Eu}}->.searchArea;
+
+(
+
+  node["tourism"="museum"]["museum"="history"]["fee"="3 EUR"];
+  way ["tourism"="museum"]["museum"="history"]["fee"="3 EUR"];
+  relation ["tourism"="museum"]["museum"="history"]["fee"="3 EUR"];
+
+  node["tourism"="museum"]["museum"="history"]["charge"="3 EUR"];
+  way ["tourism"="museum"]["museum"="history"]["charge"="3 EUR"];
+  relation ["tourism"="museum"]["museum"="history"]["charge"="3 EUR"];
+)->.museums;
+
+
+(
+  node ["amenity"="library"] (around.museums:1100);
+  way  ["amenity"="library"] (around.museums:1100);
+  relation ["amenity"="library"] (around.museums:1100);
+)->.libraries;
+
+
+.museums out center;
+.libraries out center;
